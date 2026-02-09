@@ -1,0 +1,16 @@
+site_name: Webloom Documentation
+site_description: Documentation for the Webloom project
+site_author: M Laraib Ali
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: blue
+
+nav:
+  - Home: index.md
+  - About: about.md
+
+plugins:
+  - search
