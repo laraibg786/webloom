@@ -1,6 +1,7 @@
 site_name: Webloom Documentation
 site_description: Documentation for the Webloom project
 site_author: M Laraib Ali
+site_dir: build/docs
 
 theme:
   name: material

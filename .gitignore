@@ -8,6 +8,3 @@ wheels/
 
 # Virtual environments
 .venv
-
-# mkdocs generated site files
-site
