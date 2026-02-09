@@ -80,6 +80,7 @@ jobs:
           python-version: ${{ matrix.py-version }}
 
       - name: Install Packages
+        shell: bash
         run: |
           uv sync --no-dev --group test
           uv pip install -v ./dist/*.whl
