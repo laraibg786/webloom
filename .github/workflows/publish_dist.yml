@@ -41,7 +41,8 @@ jobs:
 
       - name: Smoke Test on Test PyPI
         run: |
-          pip install -v --index-url https://test.pypi.org/simple/ webloom
+          pip install -v --index-url https://test.pypi.org/simple/ \
+          --extra-index-url https://pypi.org/simple/ webloom
           python -c "import webloom;print(webloom.__version__)"
 
   publish-to-pypi:
