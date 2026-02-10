@@ -2,8 +2,10 @@ name: Publish to PyPI
 
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    tags: [ 'v*.*.*' ]
+
+permissions:
+  id-token: write
 
 concurrency:
   group: ${{ github.workflow }}
@@ -14,9 +16,6 @@ jobs:
 
   publish-test-pypi:
     runs-on: ubuntu-latest
-
-    permissions:
-      id-token: write
 
     environment:
       name: test-pypi
