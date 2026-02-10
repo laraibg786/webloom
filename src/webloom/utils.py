@@ -72,6 +72,9 @@ def fibonacci(n: int) -> int:
     Returns:
         The nth Fibonacci number
 
+    Raises:
+        ValueError: If n is negative.
+
     Examples:
         >>> fibonacci(0)
         0
