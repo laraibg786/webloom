@@ -2,7 +2,7 @@
 
 import pytest
 
-from webloom.utils import add_numbers, multiply_numbers, is_even, fibonacci
+from webloom.utils import add_numbers, fibonacci, is_even, multiply_numbers
 
 
 class TestAddNumbers:

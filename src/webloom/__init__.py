@@ -1,14 +1,18 @@
 from importlib.metadata import PackageNotFoundError, version
 
-from webloom.utils import add_numbers, multiply_numbers, is_even, fibonacci
+from webloom._cli import main
+from webloom.utils import add_numbers, fibonacci, is_even, multiply_numbers
 
-try:  # noqa: RUF067
+try:
     __version__ = version(__name__)
 except PackageNotFoundError:
     __version__ = "unknown"
 
-def main() -> None:
-    print("Hello from webloom!")
-    print(__version__)
-
-__all__ = ["add_numbers", "multiply_numbers", "is_even", "fibonacci", "main", "__version__"]
+__all__ = [
+    "__version__",
+    "add_numbers",
+    "fibonacci",
+    "is_even",
+    "main",
+    "multiply_numbers",
+]
